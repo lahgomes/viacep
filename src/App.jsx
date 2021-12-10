@@ -1,5 +1,5 @@
 import { FaSearchLocation } from "react-icons/fa";
-import './App.css';
+import './styles/app.css';
 
 function App() {
   return (
