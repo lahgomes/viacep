@@ -2,13 +2,6 @@ html {
   font-size: 62.5%;
 }
 
-.main {
-  align-items: center;
-  display:flex;
-  height: 100vh;
-  justify-content: center;  
-}
-
 .container {
   align-items: center;
   background-color: #fff;
@@ -19,11 +12,21 @@ html {
   width: 45rem;
 }
 
-.search {
-  align-items: center;
+.search {  
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+}
+
+.search__label {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  color: #575555;
+}
+
+.search__item {
   border: 1px solid #d5d5d5;
   display: flex;
-  justify-content: center;  
 }
 
 .search__input {
@@ -33,6 +36,11 @@ html {
   outline: none;
   padding: 1rem;
   width: 22rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+::placeholder {
+  font-family: 'Open Sans', sans-serif;
 }
 
 .search__button {  
@@ -55,7 +63,7 @@ html {
   transform: scale(1);
 }
 
-.search__button i {
+.search__button svg {
   font-size: 2rem;
 }
 
