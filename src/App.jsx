@@ -1,24 +1,19 @@
-import { FaSearchLocation } from "react-icons/fa";
+import Input from './components/Input';
+import Label from './components/Label';
+import Button from './components/Button';
 import './styles/app.css';
 
 function App() {
-  return (
-
-    
-      <div className="container">
-        <div className="search">    
-          <label htmlFor="cep" className="search__label">
-            Qual é o seu CEP?
-          </label>
-          <div className="search__item">
-            <input id="cep" className="search__input" type="text" placeholder="Digite o CEP"/>
-            <button className="search__button">
-              <FaSearchLocation />
-            </button>
-          </div>          
-        </div>
+  return (    
+    <div className="container">
+      <div className="search">    
+        <Label />
+        <div className="search__item">
+          <Input />          
+          <Button />          
+        </div>      
       </div>
-
+    </div>
   );
 }
 
