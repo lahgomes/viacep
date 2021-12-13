@@ -4,6 +4,7 @@
   background-color: #fff;
   box-shadow: 2px 2px 5px rgba(180, 180, 180, 0.5);
   display: flex;
+  flex-direction: column;
   height: 35rem;
   justify-content: center;
   width: 45rem;
@@ -63,5 +64,26 @@
 .search__button svg {
   font-size: 2rem;
 }
+
+.result {  
+  color:#575555;
+  width: 26rem;
+  margin-top: 1.5rem;
+}
+
+.result__title {
+  color: #0A7B83;
+  font-weight: bold;
+  text-align: center;
+}
+
+.result p {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+}
+
+
+
+
 
 

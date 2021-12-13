@@ -1,10 +1,12 @@
 import Input from './components/Input';
 import Label from './components/Label';
 import Button from './components/Button';
+import Result from './components/Result';
 import './styles/app.css';
 
 function App() {
-  return (    
+  return ( 
+      
     <div className="container">
       <div className="search">    
         <Label />
@@ -13,6 +15,7 @@ function App() {
           <Button />          
         </div>      
       </div>
+      <Result />      
     </div>
   );
 }
