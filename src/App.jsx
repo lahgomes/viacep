@@ -1,3 +1,5 @@
+import { useState, useEffect } from 'react'
+
 import Input from './components/Input';
 import Label from './components/Label';
 import Button from './components/Button';
@@ -5,17 +7,26 @@ import Result from './components/Result';
 import './styles/app.css';
 
 function App() {
-  return ( 
-      
+
+  const [showResult, setShowResult] = useState(false)
+
+  return (
     <div className="container">
       <div className="search">    
         <Label />
         <div className="search__item">
-          <Input />          
+          <Input
+            type="search" 
+            id="cep"
+            placeholder="Digite o CEP"
+          />          
           <Button />          
-        </div>      
+        </div>
       </div>
-      <Result />      
+
+      {showResult ? (
+        <Result />
+      ) : null}
     </div>
   );
 }
