@@ -16,7 +16,7 @@ const Input = ({ type = "text", id, placeholder, ...props }) => (
 } */
 
 Input.propTypes = {
-  type: PropTypes.string.isRequired,
+  type: PropTypes.string,
   id: PropTypes.string.isRequired,
   placeholder: PropTypes.string  
 }

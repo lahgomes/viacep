@@ -20,7 +20,10 @@ function App() {
             id="cep"
             placeholder="Digite o CEP"
           />          
-          <Button />          
+          <Button 
+            type="submit"
+          
+          />          
         </div>
       </div>
 
